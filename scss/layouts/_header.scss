@@ -1,0 +1,65 @@
+.header{
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
+    url(../images/bg-image.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+&__logo-box.logo {
+  height: .5rem;
+  width: .5rem;
+}
+&__logo {
+  width: 20rem;
+  height: 21rem;
+  transition: all .5s;
+  &:hover,
+        &:active{
+            transform: translate(0) scale(.9);
+            transition: all .5s;
+        }
+}
+&__logo-box a img {
+  width: 15rem;
+  height: 16rem;
+}
+&__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+&__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+&-primary {
+  text-transform: uppercase;
+  color: $color-white;
+}
+}
+
+header {
+  display: block;
+} 
+div {
+  display: block;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+::selection {
+  color: $color-white;
+  background-color: $color-primary;
+}
